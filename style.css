@@ -140,6 +140,12 @@ body {
     /* Ensure no overflow on body */
 }
 
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .navbar {
     background-color: var(--white);
     color: var(--black);
@@ -169,6 +175,7 @@ body {
     display: inline-block;
     margin-left: 20px;
     font-size: 20vw;
+    transform: translateX(35%);
 }
 
 .sectionHeading {
@@ -196,7 +203,18 @@ body {
 .video-wrapper {
     position: relative;
     overflow: hidden;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+
+    .canvas{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
 }
 
 .scrollVideo {
